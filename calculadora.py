@@ -1,4 +1,6 @@
 #Practica de Calculadora Intuitiva (Empirica)
+# He recibido una que otra ayuda de amigos
+
 def main():    
     print("Calculadora basica By SeguraDev")
 
