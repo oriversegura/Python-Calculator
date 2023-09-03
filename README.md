@@ -1,8 +1,8 @@
-# Python-Calculator
+# Python-Basic-Calculator
 
 
-### First Version of my basic calculator in python
+ First Version of my basic calculator write in Python
+ 
+ I try to learn code in python
 
-### I try to learn code in python
-
-### this is a basic calculator for all basic math operations 
+ Is a basic calculator for all basic mathematical operations 
