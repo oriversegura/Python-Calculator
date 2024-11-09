@@ -1,17 +1,22 @@
-#Practica de Calculadora Intuitiva (Empirica)
-# He recibido una que otra ayuda de amigos
+# Practica de Calculadora Intuitiva (Empirica)
+# He recibido una que otra ayuda de amigos programadores
 
-def main():    
+
+def main():
+    # haciendo el codigo unico
     print("Calculadora basica By SeguraDev")
 
-    print("Tomaremos 2 valores y realizaremos todas las operaciones matematicas basicas con ellos")
-
+    print(
+        "Tomaremos 2 valores y realizaremos todas las operaciones matematicas basicas con ellos"
+    )
+    # solicitamos los valores al usuario
     print("Introduzca el primer valor: ")
-    valor1=float(input())
+    valor1 = float(input())
     print("Introduzca el segundo valor: ")
-    valor2=float(input())
+    valor2 = float(input())
 
-    resultadoSuma = operacion(valor1, valor2, "suma")    
+    # definimos los resultados
+    resultadoSuma = operacion(valor1, valor2, "suma")
     resultado(resultadoSuma, "suma")
     resultadoResta = operacion(valor1, valor2, "resta")
     resultado(resultadoResta, "resta")
@@ -20,17 +25,22 @@ def main():
     resultadoDiv = operacion(valor1, valor2, "division")
     resultado(resultadoDiv, "division")
 
+
+# funcion para definir las operaciones
 def operacion(valor1, valor2, tipo):
     if tipo == "suma":
         return valor1 + valor2
-    elif tipo == "resta": 
+    elif tipo == "resta":
         return valor1 - valor2
     elif tipo == "multiplicacion":
         return valor1 * valor2
     elif tipo == "division":
-        return valor1 / valor2     
+        return valor1 / valor2
 
-def resultado (resultado, tipo):
+
+# funcion para definir los resultados e imprimirlos por pantalla
+def resultado(resultado, tipo):
     print("El resultado de la " + tipo + " es: " + str(resultado))
-       
+
+
 main()
