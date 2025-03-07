@@ -21,13 +21,18 @@ def main():
     resultadoResta = operacion(valor1, valor2, "resta")
     resultado(resultadoResta, "resta")
     resultadoMult = operacion(valor1, valor2, "multiplicacion")
-    resultado(resultadoMult, "multiplicacion")
+    resultado(resultadoMult, "ultiplicacion")
     resultadoDiv = operacion(valor1, valor2, "division")
     resultado(resultadoDiv, "division")
 
 
 # funcion para definir las operaciones
 def operacion(valor1, valor2, tipo):
+    """
+    Recibe 2 valores y un tipo.
+    Luego devuelve el resultado de las operaciones
+
+    """
     if tipo == "suma":
         return valor1 + valor2
     elif tipo == "resta":
@@ -40,7 +45,11 @@ def operacion(valor1, valor2, tipo):
 
 # funcion para definir los resultados e imprimirlos por pantalla
 def resultado(resultado, tipo):
-    print("El resultado de la " + tipo + " es: " + str(resultado))
+    """
+    Recibe el resultado de las operaciones y el tipo de operaciones
+
+    """
+    print(f"El resultado de la {tipo} es: {resultado}")
 
 
 main()
