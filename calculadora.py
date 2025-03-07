@@ -52,4 +52,5 @@ def resultado(resultado, tipo):
     print(f"El resultado de la {tipo} es: {resultado}")
 
 
-main()
+if __name__ == "__main__":
+    main()
