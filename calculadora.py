@@ -2,7 +2,7 @@
 # He recibido una que otra ayuda de amigos programadores
 
 
-def main():
+def main() -> None:
     # haciendo el codigo unico
     print("Calculadora basica By SeguraDev")
 
@@ -11,23 +11,23 @@ def main():
     )
     # solicitamos los valores al usuario
     print("Introduzca el primer valor: ")
-    valor1 = float(input())
+    valor1: float = float(input())
     print("Introduzca el segundo valor: ")
-    valor2 = float(input())
+    valor2: float = float(input())
 
     # definimos los resultados
-    resultadoSuma = operacion(valor1, valor2, "suma")
+    resultadoSuma: float = operacion(valor1, valor2, "suma")
     resultado(resultadoSuma, "suma")
-    resultadoResta = operacion(valor1, valor2, "resta")
+    resultadoResta: float = operacion(valor1, valor2, "resta")
     resultado(resultadoResta, "resta")
-    resultadoMult = operacion(valor1, valor2, "multiplicacion")
+    resultadoMult: float = operacion(valor1, valor2, "multiplicacion")
     resultado(resultadoMult, "ultiplicacion")
-    resultadoDiv = operacion(valor1, valor2, "division")
+    resultadoDiv: float = operacion(valor1, valor2, "division")
     resultado(resultadoDiv, "division")
 
 
 # funcion para definir las operaciones
-def operacion(valor1, valor2, tipo):
+def operacion(valor1: float, valor2: float, tipo: str) -> float:
     """
     Recibe 2 valores y un tipo.
     Luego devuelve el resultado de las operaciones
@@ -44,7 +44,7 @@ def operacion(valor1, valor2, tipo):
 
 
 # funcion para definir los resultados e imprimirlos por pantalla
-def resultado(resultado, tipo):
+def resultado(resultado: float, tipo: str) -> None:
     """
     Recibe el resultado de las operaciones y el tipo de operaciones
 
