@@ -30,7 +30,7 @@ def main() -> None:
 def operacion(valor1: float, valor2: float, tipo: str) -> float:
     """
     Recibe 2 valores y un tipo.
-    Luego devuelve el resultado de las operaciones
+    Luego devuelve el resultado de las operaciones en un flotante
 
     """
     if tipo == "suma":
