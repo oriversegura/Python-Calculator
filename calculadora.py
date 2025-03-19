@@ -4,16 +4,14 @@
 
 def main():
     # haciendo el codigo unico
-    print("Calculadora basica By SeguraDev")
+    print("***** Calculadora by SeguraDev ***** \n")
 
     print(
-        "Tomaremos 2 valores y realizaremos todas las operaciones matematicas basicas con ellos"
+        "Tomaremos 2 valores y realizaremos todas las operaciones matemáticas básicas con ellos \n"
     )
     # solicitamos los valores al usuario
-    print("Introduzca el primer valor: ")
-    valor1 = float(input())
-    print("Introduzca el segundo valor: ")
-    valor2 = float(input())
+    valor1 = float(input("Introduzca el primer valor: \n"))
+    valor2 = float(input("Introduzca el segundo valor: \n"))
 
     # definimos los resultados
     resultadoSuma = operacion(valor1, valor2, "suma")
@@ -40,7 +38,7 @@ def operacion(valor1, valor2, tipo):
 
 # funcion para definir los resultados e imprimirlos por pantalla
 def resultado(resultado, tipo):
-    print("El resultado de la " + tipo + " es: " + str(resultado))
+    print(f"El resultado de la {tipo} es: {resultado} \n")
 
 
 main()
