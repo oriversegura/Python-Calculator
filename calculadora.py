@@ -1,5 +1,6 @@
 # Practica de Calculadora Intuitiva (Empirica)
 # He recibido una que otra ayuda de amigos programadores
+from re import match
 
 
 def main():
@@ -25,6 +26,7 @@ def main():
 
 
 # funcion para definir las operaciones
+<<<<<<< HEAD
 def operacion(valor1, valor2, tipo):
     if tipo == "suma":
         return valor1 + valor2
@@ -34,6 +36,25 @@ def operacion(valor1, valor2, tipo):
         return valor1 * valor2
     elif tipo == "division":
         return valor1 / valor2
+=======
+def operacion(valor1: float, valor2: float, tipo: str) -> float:
+    """
+    Recibe 2 valores y un tipo.
+    Luego devuelve el resultado de las operaciones en un flotante
+
+    """
+    match tipo:
+        case "suma":
+            return valor1 + valor2
+        case "resta":
+            return valor1 - valor2
+        case "multiplicacion":
+            return valor1 * valor2
+        case "division":
+            return valor1 / valor2
+        case _:
+            return None
+>>>>>>> abb1052 (new changes)
 
 
 # funcion para definir los resultados e imprimirlos por pantalla
