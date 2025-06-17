@@ -27,6 +27,11 @@ def main():
 
 # funcion para definir las operaciones
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> a4628a8 (new version)
 def operacion(valor1, valor2, tipo):
     if tipo == "suma":
         return valor1 + valor2
@@ -37,6 +42,10 @@ def operacion(valor1, valor2, tipo):
     elif tipo == "division":
         return valor1 / valor2
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> 4b83673 (new version)
+>>>>>>> a4628a8 (new version)
 def operacion(valor1: float, valor2: float, tipo: str) -> float:
     """
     Recibe 2 valores y un tipo.
@@ -54,7 +63,14 @@ def operacion(valor1: float, valor2: float, tipo: str) -> float:
             return valor1 / valor2
         case _:
             return None
+<<<<<<< HEAD
 >>>>>>> abb1052 (new changes)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> abb1052 (new changes)
+>>>>>>> 4b83673 (new version)
+>>>>>>> a4628a8 (new version)
 
 
 # funcion para definir los resultados e imprimirlos por pantalla
