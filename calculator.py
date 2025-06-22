@@ -7,25 +7,27 @@ import time
 def main() -> None:
     # Welcome Print Calculator
     print('***** Python Calculator By SeguraDev *****')
+    
+    print("Insert two values, neither can be 0!\n")
 
-    cicle : bool = True
+    while True:
     # take 2 vals to realize all basic mathematics func.
-    while cicle == True:
-
-        try:
-            value1 : float = float(input("Type first value: "))
-            value2 : float = float(input("Type second value: "))
-        except UnboundLocalError or ValueError:
-            print("Ingress valid value!")
-        try:
-            if type(value1) is not float or type(value2) is not float:
+        while True:
+            try:
+                value1 : float = float(input("Type first value: "))
+                break
+            except:
                 print("Ingress valid value!")
-        except UnboundLocalError or ValueError:
-            print("Chugaste")
-
-        else:
-            print("Calculating results...")
-            time.sleep(0.2)
+        
+        while True:
+            try:
+                value2 : float = float(input("Type second value: "))
+                break
+            except:
+                print("Ingress valid value!")
+            
+        print("Calculating results...")
+        time.sleep(0.5)
 
         def result(value1 : float, value2 : float) -> float:
             addition = value1 + value2
@@ -40,15 +42,16 @@ def main() -> None:
                 Multiplication of {value1} and {value2} is {multiplication}
                 Division of {value1} and {value2} is {division}
                 
-                    '''
-
+                '''
         try:
             results = result(value1, value2)
             print(results)
+            break
+        except:
+            print("Do not divide by 0")
+            print("Program restart\n")
+            time.sleep(1)
 
-        except ZeroDivisionError as e:
-            print(e)
-
-        cicle = False
+    
 if __name__ == "__main__":
     main()
