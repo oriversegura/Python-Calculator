@@ -1,5 +1,4 @@
-# Practica de Calculadora Intuitiva (Empirica)
-# He recibido una que otra ayuda de amigos programadores
+
 from re import match
 
 
