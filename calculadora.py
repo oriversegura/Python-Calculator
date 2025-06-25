@@ -1,8 +1,4 @@
-
-from re import match
-
-
-def main():
+def main() -> None:
     # haciendo el codigo unico
     print("***** Calculadora by SeguraDev ***** \n")
 
@@ -10,8 +6,8 @@ def main():
         "Tomaremos 2 valores y realizaremos todas las operaciones matemáticas básicas con ellos \n"
     )
     # solicitamos los valores al usuario
-    valor1 = float(input("Introduzca el primer valor: \n"))
-    valor2 = float(input("Introduzca el segundo valor: \n"))
+    valor1: float = float(input("Introduzca el primer valor: \n"))
+    valor2: float = float(input("Introduzca el segundo valor: \n"))
 
     # definimos los resultados
     resultadoSuma = operacion(valor1, valor2, "suma")
@@ -25,26 +21,6 @@ def main():
 
 
 # funcion para definir las operaciones
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> a4628a8 (new version)
-def operacion(valor1, valor2, tipo):
-    if tipo == "suma":
-        return valor1 + valor2
-    elif tipo == "resta":
-        return valor1 - valor2
-    elif tipo == "multiplicacion":
-        return valor1 * valor2
-    elif tipo == "division":
-        return valor1 / valor2
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 4b83673 (new version)
->>>>>>> a4628a8 (new version)
 def operacion(valor1: float, valor2: float, tipo: str) -> float:
     """
     Recibe 2 valores y un tipo.
@@ -61,15 +37,7 @@ def operacion(valor1: float, valor2: float, tipo: str) -> float:
         case "division":
             return valor1 / valor2
         case _:
-            return None
-<<<<<<< HEAD
->>>>>>> abb1052 (new changes)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> abb1052 (new changes)
->>>>>>> 4b83673 (new version)
->>>>>>> a4628a8 (new version)
+            return 0.0
 
 
 # funcion para definir los resultados e imprimirlos por pantalla
