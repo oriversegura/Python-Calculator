@@ -1,10 +1,8 @@
-import math
-import pprint
 import time
 
 
 # Main func
-def main() -> None:
+def main():
     # Welcome Print Calculator
     print("***** Python Calculator By SeguraDev *****")
 
@@ -27,7 +25,7 @@ def main() -> None:
                 print("Ingress valid value!")
 
         print("Calculating results...")
-        time.sleep(0.5)
+        time.sleep(1)
 
         def result(value1: float, value2: float) -> str:
             addition = value1 + value2
@@ -56,4 +54,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
